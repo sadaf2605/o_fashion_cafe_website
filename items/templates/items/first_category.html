@@ -1,0 +1,43 @@
+{% load custom_tags %}
+
+<div id="item1" class="background o-content" >
+    <div class="container marketing" >
+
+
+        <!-- START THE FEATURETTES -->
+
+
+
+        <div class="featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              <div class="text-center">
+                <img src="http://images.clipartpanda.com/clipart-design-9cRxgz7ce.png">
+              </div>
+          </div>
+          
+          <div class="col-md-5" style="margin-top: 12px;">
+            <div class="gl links">
+              <style type="text/css">
+                .d .col-md-3{
+                  float:right;
+                }
+              </style>
+
+              {% autoescape off %}
+          			 {{category.category.items|up_tri}}
+      			  {% endautoescape %}
+             
+
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>

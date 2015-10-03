@@ -1,0 +1,65 @@
+- model: showcase.ShowCaseMenuItem
+  pk: 1
+  fields:
+    name: aaa
+    image: showcase_menu_images/lehenga.png
+- model: showcase.ShowCaseMenuItem
+  pk: 2
+  fields:
+    name: abaaaa
+    image: showcase_menu_images/froc3.png
+- model: showcase.ShowCaseMenuItem
+  pk: 3
+  fields:
+    name: asdsd
+    image: showcase_menu_images/froc2.png
+- model: showcase.ShowCaseMenuItem
+  pk: 4
+  fields:
+    name: awew
+    image: showcase_menu_images/froc1.png
+- model: showcase.ShowCaseMenuItem
+  pk: 5
+  fields:
+    name: afdddas
+    image: showcase_menu_images/baby1.png
+- model: showcase.ShowCaseMenuItem
+  pk: 6
+  fields:
+    name: aererer
+    image: showcase_menu_images/lehenga.png
+  pk: 7
+  fields:
+    name: aaa
+    image: showcase_menu_images/lehenga.png
+- model: showcase.ShowCaseMenuItem
+  pk: 8
+  fields:
+    name: abaaaa
+    image: showcase_menu_images/froc3.png
+- model: showcase.ShowCaseMenuItem
+  pk: 9
+  fields:
+    name: asdsd
+    image: showcase_menu_images/froc2.png
+- model: showcase.ShowCaseMenuItem
+  pk: 10
+  fields:
+    name: awew
+    image: showcase_menu_images/froc1.png
+- model: showcase.ShowCaseMenuItem
+  pk: 11
+  fields:
+    name: afdddas
+    image: showcase_menu_images/baby1.png
+- model: showcase.ShowCaseMenuItem
+  pk: 12
+  fields:
+    name: aererer
+    image: showcase_menu_images/lehenga.png
+
+- model: showcase.Slide
+  pk: 1
+  fields:
+    name: aererer
+    image: slide_images/slide1.jpg

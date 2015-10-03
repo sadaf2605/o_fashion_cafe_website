@@ -1,0 +1,515 @@
+    /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+    body {
+      color: #5a5a5a;
+    }
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 20;
+    }
+
+    /* Flip around the padding for proper display in narrow viewports */
+    .navbar-wrapper > .container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .navbar-wrapper .navbar {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .navbar-wrapper .navbar .container {
+      width: auto;
+    }
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      height: 500px;
+      margin-bottom: 60px;
+    }
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+      z-index: 10;
+    }
+
+    /* Declare heights because of positioning of img element */
+    .carousel .item {
+      height: 500px;
+      background-color: #777;
+    }
+    .carousel-inner > .item > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .col-lg-4 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .col-lg-4 p {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (min-width: 768px) {
+      /* Navbar positioning foo */
+      .navbar-wrapper {
+        margin-top: 20px;
+      }
+      .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      /* The navbar becomes detached from the top, so we round the corners */
+      .navbar-wrapper .navbar {
+        border-radius: 4px;
+      }
+
+      /* Bump up size of carousel content */
+      .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+      }
+
+      .featurette-heading {
+        font-size: 50px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .featurette-heading {
+        margin-top: 12px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*   Owl Carousel Owl Demo Theme 
+* v1.23
+*/
+
+.owl-theme .owl-controls{
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;/*IE7 life-saver */
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #869791;
+  filter: Alpha(Opacity=50);/*IE7 fix*/
+  opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+  filter: Alpha(Opacity=100);/*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+  display: inline-block;
+  zoom: 1;
+  *display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);/*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+  filter: Alpha(Opacity=100);/*IE7 fix*/
+  opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center
+}
+
+#owl-demo .owl-item > div img {
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom:4px;
+}
+
+#owl-demo .owl-item > div{
+  background : #42bdc2;
+  text-align: center;
+  padding:50px 0px;
+  margin:3px;
+  color: white;
+  font-size:32px;
+  border:1px white;
+}
+
+.wrapper-with-margin{
+  margin:0px 50px;
+}
+
+ 
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: -45px;
+  top: 55px; 
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: -45px;
+  top: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+nav{
+  padding-bottom: 0px;
+}
+.hanger .btn{
+  vertical-align: bottom;
+  bottom: 0px;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.hanger img{
+  width: 100px;
+  vertical-align: top;
+  z-index: 991;
+}
+.hanger:not(:first-child) {
+      margin-left: -35px;
+  }
+.owl-item:hover{
+  position: relative;
+  z-index: 1000;
+}
+.owl-carousel .owl-wrapper-outer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;  // added this
+}
+
+.hanger {
+  position: relative;
+  padding-bottom: 40px; /* Needed to make room for the shadow */
+  height: 300px;
+  text-align: center;
+}
+  /* Floating Shadow Pseudoelement */
+  .hanger a:after { 
+    content:'';
+    display: block;
+    position: absolute;
+    left: 12%;
+    bottom: 0px;
+    width: 80%;
+    max-width: 210px;
+    height: 10px;
+    background: transparent;
+    border-radius: 100px/50px;
+
+  }
+ .hanger a:hover:after{
+    box-shadow: 10px 30px 30px rgba(0,0,0,0.7);    
+ } 
+
+  .hanger a {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 95%;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+  }
+
+  .hanger a:hover,
+  .hanger a:focus {
+    width: 100%;
+  }
+
+  .slide img{max-width: 100px;}
+
+
+
+.navbar{
+  max-height: 50px;
+} 
+.logo{
+  height: 80px;
+  margin-top: -10px;
+}
+.navbar-header{
+  padding-left: 10px;
+}
+
+body{
+  background: #6DB3F2 url('http://www.fabulouslybroke.com/wp-content/uploads/2012/05/stock-silk-thread-colours-clothing.jpg');
+}
+
+.container{
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 10px;
+
+}
+.navbar-wrapper .container,.navbar .container{
+  background-color: rgba(255,255,255,0.0);
+}
+
+.navbar-default{
+  background-color: #E7E7E7!important;
+}
+
+.para{
+  height: 50px;
+  width: 100%;
+}
+
+.navbar-brand{
+
+font-family: 'Pacifico', cursive;
+font-size: 28px;
+margin-left: -23px;
+padding-top: 14px;
+}
+
+.navbar-fixed-top .container{
+  width: 1170px !important;
+
+}
+.navbar-fixed-top  {
+  padding-left: 17px;
+}
+
+.o-content{
+  padding-bottom: 45px; 
+    padding-top: 45px; 
+}
+.o-content .container{
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.nav a{
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.up-tri-0 img{
+  border-top-right-radius: 10px;
+}
+.up-tri-9 {
+  border-bottom-right-radius: 10px;
+}
+.up-tri .col-md-3, .down-tri .col-md-3 {
+  height: 158px;
+}
+
+.down-tri-0 img{
+  border-top-left-radius: 10px;
+}
+.down-tri-6 img{
+  border-bottom-left-radius: 10px;
+}
+
+.others{
+  background-color:grey;
+  color:white; 
+  text-align:center;
+}
+.others img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.owl > .right{
+  rgb(102, 51, 0);
+  background-image: linear-gradient(to right, transparent 0px, rgb(102, 51, 0) 100%) !important;
+}
+.owl > .left{
+  background-image: linear-gradient(to left, transparent 0px, rgb(102, 51, 0) 100%) !important;
+}
+.hanger-control .glyphicon{
+  font-size: 17px;
+}
+
+.links a img{
+  width:100%;
+} 
+
+.links .col-md-2,.links .col-md-3{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.links .col-md-2{
+  
+}
+.hangers img {
+  max-height:100px;
+}
+
+
+
+
+
+
+
+
+
+.trending a{
+          height: 168px;
+        }
+
+
+             .recent a{
+        height: 253px;
+      }
+
+        .l .col-md-3{
+                  float:left;
+                }
+
+.navbar,.active{
+
+}
+.container{
+  margin: 0 auto;
+  max-width: 1170px;
+}

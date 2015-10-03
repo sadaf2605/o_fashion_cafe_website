@@ -1,0 +1,30 @@
+{% load custom_tags %}
+  <div id="item2" class="background o-content">
+    <div class="container marketing" >
+
+        <div class="featurette">
+          <div class="col-md-7 col-md-push-5">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <div class="text-center">
+                <img src="http://images.clipartpanda.com/clipart-design-9cRxgz7ce.png">
+              </div>
+          </div>
+          <div class="col-md-5 col-md-pull-7">
+           
+            <div class="gl links">
+
+              
+
+              {% autoescape off %}
+          			 {{category.category.items|down_tri}}
+      			  {% endautoescape %}
+
+
+            </div>
+          
+          </div>
+        </div>
+      </div>
+
+    </div>

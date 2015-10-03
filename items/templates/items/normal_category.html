@@ -1,0 +1,22 @@
+<div  class="o-content">
+    <div class="container">
+      <h2 class="featurette-heading"> Have a glimpse at our <span class="text-muted">Just Arrived</span> items...</h2>
+      <p class="lead">A wide varity of item has just arrieved at our shop. Feel free to choose and select your fevourite item from this list.</p>
+
+      <div class="recent links">
+     
+
+        {% for item in category.category.items %}
+          <a class="col-md-2" href="/{{item.image.url}}" title="This is a dress" data-gallery>
+              <img src="/{{item.image.url}}" alt="this is not banana">
+          </a>
+          {% endfor %}
+
+           <a class="col-md-2 text-center vcenter"  style="font-size:35px; line-height:30px;background-color:grey;color:white; text-align:center;">
+             <img src="/media/logo.png" style="width:100%">
+                Our other items.
+            </a>
+
+      </div>
+    </div>
+  </div>

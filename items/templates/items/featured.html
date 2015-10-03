@@ -1,0 +1,18 @@
+      <div class="row" style="s">
+<div><h2 style="padding: 0px;margin: 0px"><span class="text-muted">Featured</span> items...</h2></div>
+	    
+
+	    <div class="trending links">
+	    	{% for item in trending %}
+	        <a class="col-md-2" href="/{{item.image.url}}" title="This is a dress" data-gallery>
+	            <img src="/{{item.image.url}}" alt="this is not banana">
+	        </a>
+	        {% endfor %}
+
+	          <a class="col-md-2 text-center vcenter"  style="font-size:24px; line-height:19px;background-color:grey;color:white; text-align:center;">
+             <img src="/media/logo.png" style="width:100%">
+	              Our other items.
+	          </a>
+
+	    </div>
+      </div><!-- /.row -->

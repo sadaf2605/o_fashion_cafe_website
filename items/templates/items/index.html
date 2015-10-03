@@ -1,0 +1,71 @@
+{% extends 'items/o_fashion_template.html' %} 
+{% block 'body' %}
+  {% load static %}
+
+  <!-- NAVBAR
+  ================================================== -->
+    <body id="body">
+
+
+      <div class="container" style="padding-top:65px;">
+        {% include 'items/nav_bar.html' %} 
+
+        <div class="col-md-4" style="padding:0px;">
+          {% include 'items/big_carousel.html' %} 
+        </div>
+        <div class="col-md-8" style="">
+          {% include 'items/hanger_carousel.html' %}
+          {% include 'items/featured.html' %}
+        </div>
+
+      </div>
+
+      <div class="para"></div>
+
+      {% include 'items/about.html' %}
+
+      <div class="para"></div>
+
+      {% include 'items/recent.html' %}
+
+      <div class="para"></div>
+
+
+           
+
+
+  {% for category in front_page_categories %}
+    <div class="para"></div>
+    {% if forloop.first%}
+      <div class="para"></div>
+      {% include 'items/first_category.html' %}
+
+    {% elif forloop.last%}
+      <div class="para"></div>
+      {% include 'items/last_category.html' %}
+    {% else %}
+
+      {% include 'items/normal_category.html' %}
+
+    {% endif %}
+
+          
+    
+
+  {% endfor %}
+
+  <div class="para"></div>
+
+  {% include 'items/location.html' %}
+
+
+  <hr></hr>
+
+  {% include 'items/footer.html' %}
+
+
+  {% include 'items/gallery_modal.html' %}
+
+
+
+{% endblock %}

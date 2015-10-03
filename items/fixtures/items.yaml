@@ -1,0 +1,84 @@
+- model: items.Category
+  pk: 1
+  fields:
+    name: Three Piece
+- model: items.Item
+  pk: 1
+  fields:
+    name: aererer
+    category_id: 1
+    image: item_images/95746147_4_1000x700_discounted-price-andaz-garments-only-in-rs1299-fashion-beauty.jpg
+
+- model: items.Item
+  pk: 1
+  fields:
+    name: aererer
+    category_id: 1
+    image: item_images/97178191_2_1000x700_stylish-dress-for-sell-upload-photos.jpg
+    
+- model: items.Item
+  pk: 2
+  fields:
+    name: aererer
+    category_id: 1
+    image: item_images/96350349_5_1000x700_beautiful-embroidered-dresses-3-piece-stitched-punjab.jpg
+
+- model: items.Item
+  pk: 3
+  fields:
+    name: aererer
+    category_id: 1
+    image: item_images/97178191_2_1000x700_stylish-dress-for-sell-upload-photos.jpg
+
+- model: items.Item
+  pk: 4
+  fields:
+    name: aererer
+    category_id: 1
+    image: item_images/97425519_1_1000x700_dont-miss-out-your-function-beautiful-embroidered-dresse_NIiM7pj.jpg
+- model: items.Item
+  pk: 5
+  fields:
+    name: aererer
+    category_id: 1
+    image: item_images/95746147_4_1000x700_discounted-price-andaz-garments-only-in-rs1299-fashion-beauty.jpg
+
+- model: items.Item
+  pk: 6
+  fields:
+    name: aererer
+    category_id: 1
+    image: item_images/96350349_5_1000x700_beautiful-embroidered-dresses-3-piece-stitched-punjab.jpg
+
+- model: items.Item
+  pk: 7
+  fields:
+    name: aererer
+    category_id: 1
+    image: item_images/97178191_2_1000x700_stylish-dress-for-sell-upload-photos.jpg
+
+- model: items.Item
+  pk: 8
+  fields:
+    name: aererer
+    category_id: 1
+    image: item_images/97425519_1_1000x700_dont-miss-out-your-function-beautiful-embroidered-dresse_NIiM7pj.jpg
+  pk: 9
+  fields:
+    name: aererer
+    category_id: 1
+    image: item_images/97178191_2_1000x700_stylish-dress-for-sell-upload-photos.jpg
+    
+- model: items.Item
+  pk: 10
+  fields:
+    name: aererer
+    category_id: 1
+    image: item_images/96350349_5_1000x700_beautiful-embroidered-dresses-3-piece-stitched-punjab.jpg
+
+- model: items.Item
+  pk:  11
+  fields:
+    name: aererer
+    category_id: 1
+    image: item_images/97178191_2_1000x700_stylish-dress-for-sell-upload-photos.jpg
